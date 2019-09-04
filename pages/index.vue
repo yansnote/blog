@@ -6,7 +6,7 @@
         blog
       </h1>
       <h2 class="subtitle">
-        Yan&#39;s Note blog with js
+        Yan&#39;s Note project with js
       </h2>
       <div class="links">
         <a

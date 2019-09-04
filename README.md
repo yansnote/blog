@@ -1,6 +1,6 @@
 # blog
 
-> Yan&#39;s Note blog with js
+> Yan&#39;s Note project with js
 
 ## Build Setup
 
