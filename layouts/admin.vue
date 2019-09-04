@@ -10,10 +10,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+  @import "~/assets/admin/main.scss";
 
   body {
-    background: blue;
+    color: blue;
   }
 
 </style>

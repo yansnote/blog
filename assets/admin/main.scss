@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://mmwebfonts.comquas.com/fonts/?font=pyidaungsu');
+$nunito: 'Nunito';
+$pyidaungsu: 'pyidaungsu';
+
+$font-family-sans-serif: $nunito, $pyidaungsu, sans-serif;
+
+$theme-colors: (
+  "pay-100": #f1f7fe,
+  "pay-200": #e3effd,
+  "pay-300": #d5e7fb,
+  "pay-400": #c7dffa,
+  "pay-500": #b9d7f9,
+  "pay-600": #aacff8,
+  "pay-700": #9cc7f6,
+  "pay-800": #8ec0f5,
+  "pay-900": #80b8f4
+);
+
+@import "~node_modules/bootstrap/scss/bootstrap.scss";
+
+$sidebar-width: 250px;

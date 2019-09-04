@@ -7,3 +7,9 @@ export default {
   layout: 'AdminLayout'
 }
 </script>
+
+<style lang="scss">
+  body{
+    background: theme-color('pay-100');
+  }
+</style>
