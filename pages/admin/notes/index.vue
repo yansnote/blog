@@ -10,6 +10,6 @@ export default {
 
 <style lang="scss">
   body{
-    background: theme-color('pay-100');
+    background: theme-color('pay-900');
   }
 </style>

@@ -1,12 +1,18 @@
 <template>
   <div>
+    <Navbar />
     <nuxt />
   </div>
 </template>
 
 <script>
+import Navbar from '~/components/admin/navbar.vue'
+
 export default {
-  name: 'AdminLayout'
+  name: 'AdminLayout',
+  components: {
+    Navbar
+  }
 }
 </script>
 

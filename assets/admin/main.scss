@@ -17,6 +17,5 @@ $theme-colors: (
   "pay-900": #80b8f4
 );
 
-@import "~node_modules/bootstrap/scss/bootstrap.scss";
-
-$sidebar-width: 250px;
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap-vue/src/index.scss";
