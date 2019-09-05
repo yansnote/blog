@@ -4,12 +4,12 @@
 
 <script>
 export default {
-  layout: 'AdminLayout'
+  layout: 'admin'
 }
 </script>
 
 <style lang="scss">
-  body{
-    background: theme-color('pay-900');
-  }
+body {
+  background: theme-color("pay-900");
+}
 </style>

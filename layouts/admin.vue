@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar />
+    <navbar />
     <nuxt />
   </div>
 </template>
@@ -9,7 +9,6 @@
 import Navbar from '~/components/admin/navbar.vue'
 
 export default {
-  name: 'AdminLayout',
   components: {
     Navbar
   }
@@ -18,9 +17,5 @@ export default {
 
 <style lang="scss">
   @import "~/assets/admin/main.scss";
-
-  body {
-    color: blue;
-  }
 
 </style>
