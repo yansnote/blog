@@ -1,13 +1,13 @@
 <template>
   <section class="container">
-    <article class="border-bottom" v-for="note in notes" v-bind:key="note">
+    <article v-for="note in notes" :key="note" class="border-bottom">
       <header class="d-inline-flex align-items-start">
         <h5><a href="#">{{ note.title }}</a></h5>
       </header>
       <section class="d-flex justify-content-start text-black-50 pb-2">
         <small>
           <i class="material-icons pr-1">today</i>
-            {{ note.date }}
+          {{ note.date }}
         </small>
         <small>
           <i class="material-icons pr-1">local_offer</i>

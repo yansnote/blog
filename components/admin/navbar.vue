@@ -10,7 +10,7 @@
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav class="ml-auto">
-            <b-nav-item v-for="link in links" v-bind:key="link" href="link.route">
+            <b-nav-item v-for="link in links" :key="link" href="link.route">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"
