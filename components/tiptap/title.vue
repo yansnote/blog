@@ -5,10 +5,8 @@
 </template>
 
 <script>
-// Import the editor
 import { Editor, EditorContent } from 'tiptap'
 import { Placeholder } from 'tiptap-extensions'
-import Doc from './components/Doc'
 import Title from './components/Title'
 
 export default {
@@ -24,18 +22,13 @@ export default {
     this.editor = new Editor({
       autoFocus: true,
       extensions: [
-        new Doc(),
         new Title(),
         new Placeholder({
           showOnlyCurrent: false,
-          emptyNodeText: (node) => {
-            if (node.type.name === 'title') {
-              return 'Give me a name'
-            }
-            return 'Write Something'
-          }
+          emptyNodeText: (node) => { return 'This Is Title' }
         })
-      ]
+      ],
+      content: 'This is Title'
     })
   },
   beforeDestroy () {
