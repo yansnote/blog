@@ -21,23 +21,37 @@
         Submit
       </b-button>
     </b-form>
+
+    <div v-if="isError" class="alert alert-danger">
+      <p class="mb-0">{{ errMsg }}</p>
+    </div>
   </b-card>
 </template>
 
 <script>
+import { setTimeout } from 'timers'
+
 export default {
   data () {
     return {
       credential: {
         email: '',
         password: ''
-      }
+      },
+      isError: false,
+      errMsg: ''
     }
   },
   methods: {
     clicked () {
-      console.log('Email : ', this.credential.email)
-      console.log('Password : ', this.credential.password)
+      this.$store.dispatch('users/login', this.account).catch((error) => {
+        this.isError = true
+        this.errMsg = error.code
+
+        setTimeout(() => {
+          this.isError = false
+        }, 5000)
+      })
 
       this.$router.push('/admin')
     }
