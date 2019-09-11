@@ -11,7 +11,7 @@ const config = {
   appId: '1:326715252878:web:84cbaac716155ca39069df'
 }
 
-if (!firebase.apps.lenght) {
+if (!firebase.apps.length) {
   firebase.initializeApp(config)
 }
 

@@ -22,9 +22,9 @@
       </b-button>
     </b-form>
 
-    <div v-if="isError" class="alert alert-danger">
-      <p class="mb-0">{{ errMsg }}</p>
-    </div>
+    <b-alert :show="isError" variant="danger">
+      {{ errMsg }}
+    </b-alert>
   </b-card>
 </template>
 
@@ -44,16 +44,18 @@ export default {
   },
   methods: {
     clicked () {
-      this.$store.dispatch('users/login', this.account).catch((error) => {
+      this.$store.dispatch('users/login', this.credential).catch((error) => {
         this.isError = true
         this.errMsg = error.code
+
+        console.log(error)
 
         setTimeout(() => {
           this.isError = false
         }, 5000)
       })
 
-      this.$router.push('/admin')
+      this.$router.back()
     }
   }
 }
