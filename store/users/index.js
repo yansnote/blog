@@ -17,6 +17,9 @@ export const actions = {
       await auth.signInWithEmailAndPassword(account.email, account.password)
 
       const token = await auth.currentUser.getIdToken()
+
+      console.log(auth.currentUser)
+
       const { email, uid } = auth.currentUser
 
       Cookie.set('asset_token', token)

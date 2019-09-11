@@ -55,7 +55,7 @@ export default {
         }, 5000)
       })
 
-      this.$router.back()
+      this.$router.push('/admin/notes')
     }
   }
 }

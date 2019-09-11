@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <logo />
+      <Logo />
       <h1 class="title">
         blog
       </h1>
@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Logo from '@/components/Logo.vue'
 
 export default {
   components: {
