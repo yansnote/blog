@@ -1,19 +1,15 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
+      <logo />
       <h1 class="title">
         blog
       </h1>
       <h2 class="subtitle">
-        Yan&#39;s Note project with js
+        Yan&#39;s Note with vue
       </h2>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
+        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
           Documentation
         </a>
         <a
@@ -29,7 +25,7 @@
 </template>
 
 <script>
-import Logo from '@/components/Logo.vue'
+import Logo from '~/components/Logo.vue'
 
 export default {
   components: {
