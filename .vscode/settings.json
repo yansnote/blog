@@ -1,0 +1,18 @@
+{
+    "editor.tabSize": 2,
+    "files.eol": "\n",
+    "editor.tabCompletion": "on",
+    "files.insertFinalNewline": true,
+    "editor.fontSize": 15,
+    "editor.wordWrap": "on",
+    "editor.lineHeight": 25,
+    "emmet.syntaxProfiles": {
+        "vue-html": "html",
+        "vue": "html"
+    },
+    "emmet.includeLanguages": {
+        "edge": "html",
+        "vue-html": "html",
+        "vue": "html"
+    }
+}
